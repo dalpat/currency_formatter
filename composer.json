@@ -1,6 +1,6 @@
 {
     "name": "innowaysit/currency-formatter",
-    "description": "A Simple package that formats one currency to another e.g. USD to INR.",
+    "description": "A Simple package that formats a number to currency e.g. INR, USD etc.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
