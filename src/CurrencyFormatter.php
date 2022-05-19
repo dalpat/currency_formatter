@@ -64,10 +64,9 @@ class CurrencyFormatter
                 $locale = 'en_US';
             case 'EUR':
                 $locale = 'de_DE';
-            default:
-                $locale = 'en_IN';
         }
 
+        // dd($locale);
         $formatter = new NumberFormatter($locale, NumberFormatter::CURRENCY);
         // $formatter->setSymbol(NumberFormatter::CURRENCY_SYMBOL, '');
         return (string) $formatter->format($amount);
