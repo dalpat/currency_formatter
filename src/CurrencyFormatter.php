@@ -62,8 +62,13 @@ class CurrencyFormatter
         switch ($target_format) {
             case 'USD':
                 $locale = 'en_US';
+                break;
             case 'EUR':
                 $locale = 'de_DE';
+                break;
+            default:
+                $locale = 'en_IN';
+                break;
         }
 
         // dd($locale);
