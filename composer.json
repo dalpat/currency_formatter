@@ -1,0 +1,17 @@
+{
+    "name": "innowaysit/currency-formatter",
+    "description": "A Simple package that formats one currency to another e.g. USD to INR.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Innowaysit\\CurrencyFormatter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dalpat Singh",
+            "email": "dalpatsinghpurohit@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
