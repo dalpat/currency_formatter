@@ -9,3 +9,9 @@
 
     $formatted_currency_string = Innowaysit\CurrencyFormatter::format($amount,'inr'); // returns 1,000.00 as string
 ```
+
+### Supported currencies
+
+- INR
+- USD
+- EUR
