@@ -7,7 +7,7 @@ use UnexpectedValueException;
 
 class CurrencyFormatter
 {
-    protected static $currencies = ['INR', 'USD'];
+    protected static $currencies = ['INR', 'USD', 'EUR'];
     /**
      * Method format
      *
@@ -21,13 +21,15 @@ class CurrencyFormatter
         $currencies = self::$currencies;
 
         if (!in_array($target_format, $currencies)) {
-            throw new UnexpectedValueException($target_format . " is currently not supported.");
+            throw new UnexpectedValueException($target_format . " is currently not supported. Supported currencies are " . implode(", ", $currencies) . ".");
         }
 
         $locale = 'en_IN';
         switch ($target_format) {
             case 'USD':
                 $locale = 'en_US';
+            case 'EUR':
+                $locale = 'de_DE';
             default:
                 $locale = 'en_IN';
         }
